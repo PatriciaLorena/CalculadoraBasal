@@ -1,20 +1,14 @@
-/* este usare para mi proyecto modificado
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora&family=Merriweather:wght@300&display=swap');
 body{
-    font-family: "Lora",'Libre Baskerville', 'Merriweather', sans-serif;
-}
-*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
-body{
     background: #f6f5f7; 
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Lora",'Libre Baskerville', 'Merriweather', sans-serif;
     color: #3E363F;
 }
 
 #contenedor{
-    width: 900px;
-    height: 500px;
+    width: 90%;
+    height: 90%;
     text-align: center;
     /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
     position: absolute;
@@ -26,7 +20,7 @@ body{
       0 10px 10px rgba(0,0,0,0.22);
   }
   #calculadora{
-    background: white;
+    background: #f0f7da;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
@@ -34,12 +28,12 @@ body{
 }
 
 #detalle{
-    background: #FF416C;
+    background: #234d20;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
     float: left;
-    color: #f6f5f7;
+    color: #f0f7da;
 }
 
 .contenido{
@@ -51,20 +45,22 @@ body{
     padding: 40px;
 }
 input {
-	width: 70%;
+	width: 90%;
     padding: 12px 15px;
     border: none;
-    background-color: #eee;
+    background-color: #77ab59;
+    place-content: #c9df8a;
 }
 
 button {
+    width: 100%;
     font-size: 15px;
 	font-weight: bold;
 	padding: 12px 45px;
 	border-radius: 30px;
-	background-color: #FF416C;
-	border: 1px solid #FF416C;
-	color: #FFFFFF;
+	background-color: #36802d;
+	border: 1px solid #36802d;
+	color: #f0f7da;
 	text-transform: uppercase;
 	letter-spacing: 1px;
     margin-top: 15px;
@@ -82,11 +78,51 @@ button:active {
 }
 
 .resultado{
-    color: #0A81D1;
+    color: #36802d;
     font-weight: bold;
     font-size: 25px;
-    margin-bottom: 5px;
+    margin-bottom: -15px;
 
    /* oculta los elementos se modificara con js
    display: none;*/
 }
+
+#concepto, #como{
+    text-align: justify;
+    color: #f0f7da;
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 900px) {
+    #calculadora {
+        width: 100%;
+        height: 80%;
+        
+    }
+    #detalle {
+        width: 100%;
+        height: 80%;
+        
+    }
+    #contenedor{
+        overflow: scroll;
+        width: 95%;
+        height: 95%;
+        text-align: center;
+        align-items: center;
+        /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        font-size: 21px;
+      }
+      .contenido{
+        /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
+        position: relative;
+        top: 0%;
+        transform: translateY(0%);
+        overflow: hidden;
+        padding: 20px;
+    }
+}
+

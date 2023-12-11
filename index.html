@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de hidratación</title>
+    <script src="h.js" defer></script>
 </head>
 <body>
     <div id="contenedor">
@@ -13,23 +14,24 @@
                 <h1>Hidratación Basal</h1>
                 <p class="item">Completa todos los datos</p>
                 <input class="item" id="peso" type="number" placeholder="Peso en kg" />
-                <p class="item" id="error">* Debe completar todos los datos</p>
+                <p class="item" id="error"></p>
                 <button class="item" id="calcular">Calcular</button>
                 <p class="item resultado" id="flu">71cc/h</p>
+                <p class="item resultado" id="dia">m+m/2 : 105cc/h</p>
                 <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
+
             </div>
         </div>
         <div id="detalle">
             <div class="contenido">
-                <h1>¿Como se calcula?</h1>
-                <ul>
-                    <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
-                    <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
-                    <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
-                </ul>
+                <h1 id="hidratacion">¿Que es hidratación basal?</h1>
+                <p id="concepto">La hidratación basal es la cantidad de líquidos que una persona requiere en 24 horas para mantener una hidratación de mantenimiento, que es lo que mantiene el medio interno del organismo y permite que el resto de los sistemas funcionen.</p>
+                <h2 id="metodo"></h2>
+                <h3 id="comoCalcular"></h3>
+                <ul id="como"></ul>
             </div>
         </div>
     </div>
+
 </body>
-</html>
 </html>
